@@ -1,0 +1,14 @@
+name: my_theme
+type: theme
+description: This is a custom theme for QED42 Interview coding round.
+core_version_requirement: ^8 || ^9
+base theme: false
+
+
+libraries:
+  - my_theme/global-styling
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer

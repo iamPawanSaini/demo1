@@ -1,0 +1,8 @@
+uuid: 242f0fb4-b510-456f-a241-86fcc527c355
+langcode: en
+status: true
+dependencies: {  }
+name: Bibliography
+vid: bibliography
+description: 'A list of cited references or sources used in the publication, usually arranged alphabetically and following a specific citation'
+weight: 0

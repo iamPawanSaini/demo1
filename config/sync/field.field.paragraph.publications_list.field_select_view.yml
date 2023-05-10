@@ -1,0 +1,44 @@
+uuid: 6aa0f0a1-70a2-44a8-a0b8-4dc98cebfb8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_select_view
+    - paragraphs.paragraphs_type.publications_list
+  module:
+    - viewsreference
+id: paragraph.publications_list.field_select_view
+field_name: field_select_view
+entity_type: paragraph
+bundle: publications_list
+label: 'Select view'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+  preselect_views:
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    publication_list: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

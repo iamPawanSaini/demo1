@@ -1,0 +1,22 @@
+// Mixin for media breakpoints
+@mixin media-breakpoint($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (min-width: 601px) and (max-width: 959px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: 960px) {
+      @content;
+    }
+  }
+  // Breakpoint for max-width
+  @else if $breakpoint == below-desktop {
+    @media (max-width: 959px) {
+      @content;
+    }
+  }
+}

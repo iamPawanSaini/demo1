@@ -1,0 +1,19 @@
+// Pagination style
+.pager {
+  display: flex;
+  &__items {
+    display: flex;
+    margin: 0 auto;
+  }
+  &__item {
+    padding: 7px 15px;
+    border: 1px solid $blue;
+    margin-left: -1px;
+    &.is-active {
+      background-color: $blue;
+      a {
+        color: $white;
+      }
+    }
+  }
+}

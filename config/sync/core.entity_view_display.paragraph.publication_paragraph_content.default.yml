@@ -1,0 +1,46 @@
+uuid: 8b53365d-59e7-4844-b02c-3c7bd54aa127
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.publication_paragraph_content.field_file_upload
+    - field.field.paragraph.publication_paragraph_content.field_language
+    - field.field.paragraph.publication_paragraph_content.field_url
+    - paragraphs.paragraphs_type.publication_paragraph_content
+  module:
+    - file
+    - link
+id: paragraph.publication_paragraph_content.default
+targetEntityType: paragraph
+bundle: publication_paragraph_content
+mode: default
+content:
+  field_file_upload:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_language:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

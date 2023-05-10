@@ -1,0 +1,42 @@
+uuid: 23280372-2d4f-41c5-a866-df57b01b1edb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.publications_list.field_description
+    - field.field.paragraph.publications_list.field_heading
+    - field.field.paragraph.publications_list.field_select_view
+    - paragraphs.paragraphs_type.publications_list
+  module:
+    - text
+    - viewsreference
+id: paragraph.publications_list.default
+targetEntityType: paragraph
+bundle: publications_list
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_select_view:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

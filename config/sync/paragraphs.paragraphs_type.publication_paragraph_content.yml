@@ -1,0 +1,10 @@
+uuid: 1f5c93da-d71e-49c5-b565-e4c5f0220ad4
+langcode: en
+status: true
+dependencies: {  }
+id: publication_paragraph_content
+label: 'Publication paragraph content'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

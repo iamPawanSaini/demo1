@@ -1,0 +1,10 @@
+uuid: bdfc00a8-f812-4289-b3d3-d9f79a70eee5
+langcode: en
+status: true
+dependencies: {  }
+id: publications_list
+label: 'Publications list'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

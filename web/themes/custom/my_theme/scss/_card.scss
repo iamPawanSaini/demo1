@@ -1,0 +1,84 @@
+.publication-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 0;
+  @include media-breakpoint(below-desktop) {
+    padding: 30px 0;
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    @include media-breakpoint(desktop) {
+      max-width: 80%;
+    }
+    @include media-breakpoint(below-desktop) {
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    @include media-breakpoint(desktop) {
+      margin-right: 30px;
+    }
+    @include media-breakpoint(below-desktop) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__category {
+    margin-bottom: 14px;
+    a {
+      color: $black;
+    }
+  }
+  &__content {
+    @include media-breakpoint(desktop) {
+      padding-right: 30px;
+    }
+  }
+
+  &__heading {
+    &--text {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 15px;
+  }
+
+  &__date {
+    @include media-breakpoint(desktop) {
+      padding-left: 4%;
+    }
+  }
+
+  &__language {
+    &--link {
+      margin-right: 5px;
+      padding-right: 10px;
+      border-right: 1px solid $black;
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+  
+}
+
+// hiding cover images in mobile except first.
+.publication-wrapper {
+  margin-bottom: 30px;
+  .border {
+    &:not(:first-child) {
+      .publication-card__img {
+        @include media-breakpoint(below-desktop) {
+          display: none;
+        }
+      }
+    }
+  }
+}

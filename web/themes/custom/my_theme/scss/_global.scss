@@ -1,0 +1,39 @@
+// Global styling
+.wrapper {
+  max-width: 100%;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  @include media-breakpoint(tablat) {
+    max-width: 768px;
+  }
+  @include media-breakpoint(desktop) {
+    max-width: 1170px;
+  }
+}
+
+.block-title {
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 40px;
+  @include media-breakpoint(tablat) {
+    padding: 0 100px;
+  }
+  .description {
+    font-size: 20px;
+  }
+}
+.border {
+  border-top: 1px solid $grey-1;
+}
+
+.icon {
+  max-width: 25px;
+  vertical-align: middle;
+  mix-blend-mode: color-burn;
+  margin-right: 10px;
+}
+
+.bg-grey {
+  background-color: $grey;
+}

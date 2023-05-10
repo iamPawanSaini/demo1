@@ -1,0 +1,8 @@
+uuid: 17bfecc6-bd95-4d5d-8482-c36c79c7b100
+langcode: en
+status: true
+dependencies: {  }
+name: 'Case Study'
+vid: case_study
+description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy te'
+weight: 0

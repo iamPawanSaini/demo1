@@ -1,0 +1,19 @@
+uuid: 12820d29-8da4-4c81-8b17-a4d1ad818f59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.publications_list
+id: paragraph.publications_list.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: publications_list
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,75 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+// Typography
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 48px; 
+}
+
+h2 {
+  font-size: 40px; 
+}
+
+h3 {
+  font-size: 32px; 
+}
+
+h4 {
+  font-size: 28px; 
+}
+
+h5 {
+  font-size: 24px; 
+}
+
+h6 {
+  font-size: 18px; 
+}
+
+// CTA
+a {
+  &:focus,
+  &:visited {
+    color: $link;
+  }
+}
+
+// Lists
+ul,
+ol {
+  list-style: none;
+}
+
+// Forms
+input,
+textarea,
+button,
+select {
+  outline: none;
+  appearance: none;
+  border-radius: 0;
+  background-color: transparent;
+  font-family: Arial, sans-serif;
+}
+
+// Button
+button {
+  cursor: pointer;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+}

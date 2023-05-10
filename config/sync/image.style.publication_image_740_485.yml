@@ -1,0 +1,15 @@
+uuid: 14ff22de-fcca-4e87-ba5b-d66a101640da
+langcode: en
+status: true
+dependencies: {  }
+name: publication_image_740_485
+label: 'publication image(740 * 485)'
+effects:
+  17f74bb5-04b8-447c-9c7c-955c31a16b8e:
+    uuid: 17f74bb5-04b8-447c-9c7c-955c31a16b8e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 740
+      height: 485
+      anchor: center-center

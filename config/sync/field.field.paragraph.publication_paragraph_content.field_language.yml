@@ -1,0 +1,19 @@
+uuid: c7143f9c-9225-407e-9e19-e38181e0fc71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_language
+    - paragraphs.paragraphs_type.publication_paragraph_content
+id: paragraph.publication_paragraph_content.field_language
+field_name: field_language
+entity_type: paragraph
+bundle: publication_paragraph_content
+label: Language
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

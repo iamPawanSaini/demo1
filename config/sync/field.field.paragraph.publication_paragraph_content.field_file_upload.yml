@@ -1,0 +1,27 @@
+uuid: 5561d90a-0e65-451d-8fdb-85f4e35c4796
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file_upload
+    - paragraphs.paragraphs_type.publication_paragraph_content
+  module:
+    - file
+id: paragraph.publication_paragraph_content.field_file_upload
+field_name: field_file_upload
+entity_type: paragraph
+bundle: publication_paragraph_content
+label: 'File Upload'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,31 @@
+uuid: 20df2bd6-345d-487f-a59f-2f3e801ccf61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_reference
+    - node.type.publication
+    - paragraphs.paragraphs_type.publication_paragraph_content
+  module:
+    - entity_reference_revisions
+id: node.publication.field_paragraph_reference
+field_name: field_paragraph_reference
+entity_type: node
+bundle: publication
+label: 'Paragraph reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      publication_paragraph_content: publication_paragraph_content
+    negate: 0
+    target_bundles_drag_drop:
+      publication_paragraph_content:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions
