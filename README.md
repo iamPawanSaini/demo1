@@ -1,17 +1,19 @@
 > Clone the Repository
 
-   1. Open your terminal or command prompt.
-   2. Navigate to the directory where you want to clone the repository.
-   3. Run the following command to clone the repository:
-        > git clone https://github.com/iamPawanSaini/demo1.git
-     
- > Install Dependencies
+1.  Open your terminal or command prompt.
+2.  Navigate to the directory where you want to clone the repository.
+3.  Run the following command to clone the repository:
+    > git clone https://github.com/iamPawanSaini/demo1.git
+
+> Install Dependencies
+
     1. Go to the root directory of the project
     2. Run the following command to install the project dependencies using Composer
            > composer install
 
 > Database Setup
-    1. For XAMPP 
+
+    1. For XAMPP
         > Create a new MySQL database for your Drupal project.
             > you can follow these steps
                  1. Start XAMPP, Launch the XAMPP control panel and start the Apache and MySQL services.
@@ -34,14 +36,14 @@
                     DocumentRoot "C:/xampp/htdocs/your_drupal_project_folder"
                     ServerName demo.local
                 </VirtualHost>**
-            
+
             3. After this open host file which is locaeted at C:\Windows\System32\drivers\etc\hosts location.
                 add this line in host file
                 127.0.0.1 demo.local
-                
-                
+
+
             Now configure your db in settigs.php file this may looks like
-                
+
                 $databases['default']['default'] = array(
                    'database' => 'dbname',       //Your Db NAme
                    'username' => 'root',
@@ -51,40 +53,40 @@
                    'driver' => 'mysql',
                    'prefix' => '',
                   );
-                
-                
+
+
                 > Restart Apache and Mysql services and hit "demo.local" URL in your browser
-                
-                                   
-                    
-                    
+
+
+
+
       > If you are using Docker with Lando then should run below command
             > After cloning the project move to the root directory and open command window
             > Run command "lando init"
             > after this command lando will ask to choose a recipe Select "drupal9" next will ask for root folder and project name you can choose accordingly.
             > then Run " lando rebuild -y  " command
             > then "lando composer install"
-            > once everything done Run " lando start  " 
+            > once everything done Run " lando start  "
             > for importing db Run "   lando db-import <file-to-import>"
-            
-            
+
+
       Once you have done with the setup hit the local site url in browser
-      > The admin Credentials are 
+      > The admin Credentials are
                     Username :- admin
                     Pass:-  admin
       For the view listing page you need to go to below url
          " demo.local/node/2"
-            
-      
-      
-      
-      
+
+
+
+
+
       Thanks and Regards
-      Pawan Kumar          
-                
-                
-                
-                
-                
-                
-                
+      Pawan Kumar
+
+
+
+
+
+
+
